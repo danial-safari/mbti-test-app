@@ -1,0 +1,22 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Platform
+*.DS_Store
+*.swp
+*~
+
+# Environment
+# .env
+
+# Generated
+*.g.dart
+*.freezed.dart
