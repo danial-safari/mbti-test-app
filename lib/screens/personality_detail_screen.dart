@@ -98,7 +98,7 @@ class _PersonalityDetailScreenState extends State<PersonalityDetailScreen>
       'famous': ['هنری فورد', 'هیلاری کلینتون'],
     },
     'ESFJ': {
-      'title': 'کنسول',
+      'title': 'مراقب',
       'strengths': ['اجتماعی', 'گرم', 'مسئول', 'همکار'],
       'weaknesses': ['خوشایند مردم', 'حساس', 'محافظه‌کار'],
       'careers': ['معلم', 'پرستار', 'فروشنده'],

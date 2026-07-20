@@ -152,7 +152,7 @@ class ResultScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 8),
                     child: Text(
                       entries[index].key,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: primaryColor,
                         fontSize: 16,

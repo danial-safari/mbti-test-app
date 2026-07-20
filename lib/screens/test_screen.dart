@@ -92,16 +92,34 @@ class _TestScreenState extends State<TestScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(Icons.error_outline, size: 64, color: Colors.red),
+                const Icon(Icons.wifi_off, size: 64, color: Colors.orange),
                 const SizedBox(height: 16),
-                Text(_error!, textAlign: TextAlign.center),
+                const Text(
+                  'اتصال اینترنت برقرار نیست',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'لطفاً اتصال اینترنت خود را بررسی کنید و دوباره تلاش کنید.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.7),
+                  ),
+                ),
                 const SizedBox(height: 24),
-                ElevatedButton(
+                ElevatedButton.icon(
                   onPressed: () {
                     setState(() { _isLoading = true; _error = null; });
                     _loadQuestions();
                   },
-                  child: const Text('تلاش مجدد'),
+                  icon: const Icon(Icons.refresh),
+                  label: const Text('تلاش مجدد'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: primaryColor,
+                    foregroundColor: Colors.white,
+                  ),
                 ),
               ],
             ),
@@ -155,7 +173,7 @@ class _TestScreenState extends State<TestScreen> {
                     ),
                     Text(
                       '${(progress * 100).toInt()}%',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: primaryColor,
                       ),

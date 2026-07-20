@@ -14,9 +14,9 @@ class HomeScreen extends StatelessWidget {
         child: CustomScrollView(
           slivers: [
             // App Bar with settings button
-            SliverAppBar(
+            const SliverAppBar(
               floating: true,
-              title: const Text('پرسونالیتی فای'),
+              title: Text('پرسونالیتی فای'),
             ),
 
             SliverPadding(

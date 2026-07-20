@@ -30,8 +30,8 @@ Map<String, Color> typeColors = {
   'ESFJ': const Color(0xFFFF7043),
   'ISTP': const Color(0xFF26C6DA),
   'ISFP': const Color(0xFF9CCC65),
-  'ESTP': const Color(0xFFFFEE58),
-  'ESFP': const Color(0xFFD4E157),
+  'ESTP': const Color.fromARGB(255, 255, 149, 88),
+  'ESFP': const Color.fromARGB(255, 91, 93, 235),
 };
 
 /// Returns color for a personality type code

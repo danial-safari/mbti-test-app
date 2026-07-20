@@ -70,7 +70,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
             // App title
             const Text(
-              'پرسونالیتی فای',
+              'پرسونالیتی فایندر',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,

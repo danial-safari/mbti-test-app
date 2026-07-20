@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'پرسونالیتی فای',
+      title: 'MBTI Test',
       debugShowCheckedModeBanner: false,
       builder: (context, child) {
         // Force RTL text direction for the entire app (Persian)
